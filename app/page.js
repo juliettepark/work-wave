@@ -8,8 +8,8 @@ export default function Home() {
 
 function Navbar() {
   const CLIENT_ID = "99439ec664294f8a84876ac4d38952f8"
-  const REDIRECT_URI = "http://localhost:3000/callback/"
-  const AUTH_ENDPOINT = "http://accounts.spotify.com/authorize"
+  const REDIRECT_URI = "http://localhost:3000/"
+  const AUTH_ENDPOINT = "http://accounts.spotify.com/authorize/"
   const RESPONSE_TYPE = "token"
   return (
     <nav className="border-b border-gray-800 sticky top-0 bg-gray-900 text-gray-100 z-10">
@@ -32,7 +32,7 @@ function Navbar() {
             <a href="/workspace.js">Workspace</a>
           </li>
         </ul>
-        <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`} target="_blank">SPOTIFY LOGIN</a> 
+        <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`} >SPOTIFY LOGIN</a> 
       </div>
     </nav> 
   );
