@@ -6,19 +6,25 @@ export default function Home() {
   const AUTH_ENDPOINT = "http://accounts.spotify.com/authorize"
   const RESPONSE_TYPE = "token"
   return (
-    <nav>
-      <div>
-        <a href="/">Home</a>
-        <ul>
-          <li>
-            <a href="/blog">Blog</a>
+    <Navbar/>
+  )
+}
+
+function Navbar() {
+  return (
+    <nav className="border-b border-gray-800 sticky top-0 bg-gray-900 text-gray-100 z-10">
+      <div className="h-14 max-w-7xl p-4 mx-auto flex items-center justify-between">
+        <a href="/" className='font-medium text-lg md:hover:underline'>Home</a>
+        <ul className='flex items-center justify-end space-x-4 text-sm font-medium'>
+          <li className='md:hover:underline'>
+            <a href="/login.js">Login</a>
           </li>
-          <li>
-            <a href="/photos">Photos</a>
+          <li className='md:hover:underline'>
+            <a href="/about.js">About</a>
           </li>
         </ul>
         <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&${RESPO}`}>SPOTIFY LOGIN</a>
       </div>
     </nav> 
-  )
+  );
 }
