@@ -25,6 +25,9 @@ function Navbar() {
           <li className='md:hover:underline'>
             <a href="/workspace.js">Workspace</a>
           </li>
+          <li className='md:hover:underline'>
+            <a href="/meetwilly.js">Meet Willy</a>
+          </li>
         </ul>
         <a href={`${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`} >SPOTIFY LOGIN</a> 
       </div>
