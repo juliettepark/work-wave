@@ -16,7 +16,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> 
 
 
 
