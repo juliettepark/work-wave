@@ -1,9 +1,11 @@
 import Image from 'next/image'
+import Willy from 'app/meetwilly.js'
 
 export default function Home() {
   return (
     <div>
       <Navbar/>
+      <Willy/>
     <div className='grid grid-cols-5'> 
       <div className='bg-spotify-black h-screen'>.</div>
       <div className='bg-spotify-pink'></div>
@@ -11,8 +13,8 @@ export default function Home() {
       <div className='bg-spotify-purple'></div>
       <div className='bg-spotify-blue'></div>
     </div>
-    <div></div>
     </div>
+  
   )
 }
 

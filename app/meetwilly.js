@@ -1,8 +1,8 @@
 
 import React from 'react'; 
-import './App.css'; 
+// import './App.css'; 
   
-function App() { 
+export default function Willy() { 
     return ( 
         <div> 
   
@@ -102,5 +102,3 @@ function App() {
         </div> 
     ) 
 } 
-  
-export default App 
