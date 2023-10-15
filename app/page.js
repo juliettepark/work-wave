@@ -1,8 +1,13 @@
 import Image from 'next/image'
+import Willy from 'app/meetwilly.js'
 
 export default function Home() {
   return (
-    <Navbar/>
+    <div>
+      <Navbar/>
+      <Willy/>
+    </div>
+    
   )
 }
 
