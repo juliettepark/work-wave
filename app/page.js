@@ -2,8 +2,16 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div> 
+    <div>
       <Navbar/>
+    <div className='grid grid-cols-5'> 
+      <div className='bg-spotify-black h-screen'>.</div>
+      <div className='bg-spotify-pink'></div>
+      <div className='bg-spotify-green'></div>
+      <div className='bg-spotify-purple'></div>
+      <div className='bg-spotify-blue'></div>
+    </div>
+    <div></div>
     </div>
   )
 }
@@ -19,16 +27,10 @@ function Navbar() {
         <a href="/" className='font-medium text-lg md:hover:underline'>Home</a>
         <ul className='flex items-center justify-end space-x-4 text-sm font-medium'>
           <li className='md:hover:underline'>
-            <a href="/login.js">Login</a>
-          </li>
-          <li className='md:hover:underline'>
             <a href="/about.js">About</a>
           </li>
           <li className='md:hover:underline'>
             <a href="/task.js">Tasks</a>
-          </li>
-          <li className='md:hover:underline'>
-            <a href="/workspace.js">Workspace</a>
           </li>
           <li className='md:hover:underline'>
             <a href="/meetwilly.js">Meet Willy</a>
