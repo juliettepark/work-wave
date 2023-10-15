@@ -5,8 +5,6 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-      {/* <Willy/> */}
-      <Willy/>
     <div className='grid grid-cols-5'> 
       <div className='bg-spotify-black h-screen'>.</div>
       <div className='bg-spotify-pink'></div>
