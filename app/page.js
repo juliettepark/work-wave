@@ -6,6 +6,14 @@ export default function Home() {
     <div>
       <Navbar/>
       {/* <Willy/> */}
+      <Willy/>
+    <div className='grid grid-cols-5'> 
+      <div className='bg-spotify-black h-screen'>.</div>
+      <div className='bg-spotify-pink'></div>
+      <div className='bg-spotify-green'></div>
+      <div className='bg-spotify-purple'></div>
+      <div className='bg-spotify-blue'></div>
+    </div>
     </div>
   )
 }
@@ -25,9 +33,6 @@ function Navbar() {
           </li>
           <li className='md:hover:underline'>
             <a href="/task.js">Tasks</a>
-          </li>
-          <li className='md:hover:underline'>
-            <a href="/workspace.js">Workspace</a>
           </li>
           <li className='md:hover:underline'>
             <a href="/willy">Meet Willy</a>
